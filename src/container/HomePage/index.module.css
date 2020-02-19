@@ -1,0 +1,8 @@
+.homepage{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.card{
+    border: solid 2px black;
+}
