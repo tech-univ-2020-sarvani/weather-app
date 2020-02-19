@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import PropTypes from 'prop-types';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import HomePage from './container/HomePage';
+import WeatherPage from './container/WeatherPage';
+import SearchBar from './container/SearchBar';
 
-function App() {
+function App(props) {
+  const { testId } = props;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" data-testid={testId}>
+      <Router>
+        <Switch>
+          <Route path="/weather">
+            <HomePage />
+          </Route>
+          <Route path="/bycityname">
+            <SearchBar />
+          </Route>
+          <Route path="/">
+            <WeatherPage />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
-
+App.propTypes = {
+  testId: PropTypes.string,
+};
 export default App;

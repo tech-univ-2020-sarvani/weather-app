@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The App should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+    data-testid="test-app"
+  >
+    <div
+      class="homepage"
+    >
+      <button
+        type="button"
+      >
+        Predict Weather
+      </button>
+      <input
+        type="text"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
