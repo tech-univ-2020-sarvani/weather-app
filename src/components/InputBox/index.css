@@ -1,0 +1,9 @@
+.input{
+    width: 50%;
+    padding: 12px 20px;
+    margin-top: 150px;
+    display: inline-block;
+    border: 2px solid rgb(20, 19, 19);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }

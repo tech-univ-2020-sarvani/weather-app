@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The InputBox component shouls render correctly 1`] = `
+<DocumentFragment>
+  <input
+    data-testid="test-input"
+    type="text"
+  />
+</DocumentFragment>
+`;
